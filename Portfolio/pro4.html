@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            background-color: burlywood;
+
+        }
+    </style>
+    <header>
+        <form>
+            <center>
+            
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" min="18" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Skills:</label></td>
+                    <td>
+                        <input type="radio" id="java" name="skills" value="Java">
+                        <label for="java">Java</label>
+                        <input type="radio" id="python" name="skills" value="Python">
+                        <label for="python">Python</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="experience">Experience:</label></td>
+                    <td>
+                        <select id="experience" name="experience">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="about">About your Experience:</label></td>
+                    <td><textarea id="about" name="about" rows="5" placeholder="Enter your message"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <button type="submit">Apply</button>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        </form>
+    </header>
+</body>
